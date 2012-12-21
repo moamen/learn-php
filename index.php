@@ -4,5 +4,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-echo "i love you";
+include 'ConnectionClass.php';
+$Cnn = new Connection();
+$link = $Cnn->Connect();
+if($link){
+    echo "connected";
+}
 ?>
